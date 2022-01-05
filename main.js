@@ -91,15 +91,15 @@ function logic() {
         output = "Why? What happened?";
     }
 
-    if (input.includes("yes")) {
+    else if (input.includes("yes")) {
         output = ":D";
     }
 
-    if (input.includes("no")) {
+    else if (input.includes("no")) {
         output = ":(";
     }
 
-    if (input.includes("love")) {
+    else if (input.includes("love")) {
         output = "What is love?";
     }
 
