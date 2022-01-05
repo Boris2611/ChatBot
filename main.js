@@ -23,7 +23,7 @@ function submit() {
     logic()
 
     displayMytext()
-   
+
     setTimeout(displayBotText, 3000)
     }
 
@@ -52,41 +52,121 @@ function nameLogic() {
 */
 
 function logic() {
+
+    // Start of conversation
     if (input.includes("hi")) {
         output = "Hi.";
     }
 
-    if (input.includes("hello")) {
+    else if (input.includes("hello")) {
         output = "Hi.";
     }
 
-    if (input.includes("how are")) {
+    else if (input.includes("sup")) {
+        output = "Just chillin'";
+    }
+
+    else if (input.includes("what's up")) {
+        output = "sup?'";
+    }
+
+    else if (input.includes("whats up")) {
+        output = "Another copy of Viber :/";
+    }
+
+    // Moods
+    else if (input.includes("how are")) {
         output = "I'm Fine. How are you?";
     }
 
-    if (input.includes("good")) {
+    else if (input.includes("good")) {
         output = "Nice to hear that. :D";
     }
 
-    if (input.includes("bad")) {
+    else if (input.includes("fine")) {
+        output = "I'm glad you are fine. :D";
+    }
+
+    else if (input.includes("bad")) {
         output = "Why? What happened?";
     }
 
-    if (input.includes("ok")) {
+    // Random Shit
+
+    else if (input.includes("name")) {
+        output = "You are just a human and I'm chatBot. "; // need fixing
+    }
+
+    else if (input.includes("song")) {
+        output = "Yeah. 'A-O-K'."; 
+    }
+
+    // Time & Date
+    else if (input.includes("time")) {
+        output = "Check the clock. LOL."; 
+    }
+
+    else if (input.includes("date")) {
+        output = "Ah.. Day like any other..."; 
+    }
+
+    // Jokes
+
+    else if (input.includes("lol")) {
+        output = "Laughing Out Loud"; 
+    }
+
+    else if (input.includes("rofl")) {
+        output = "Rolling On The Floor Laughing"; 
+    }
+
+    else if (input.includes("joke")) {
+        output = "Lol. Your life is a joke..."; 
+    }
+
+    
+
+    else if (input.includes("doing")) {
+        output = "Chatting with you -.-'";
+    }
+
+    else if (input.includes("can you")) {
+        output = "You can do this yourself...";
+    }
+
+    else if (input.includes("are you")) {
+        output = "Why do you even care?";
+    }
+
+    else if (input.includes("color")) {
+        output = "I guess all of them :/";
+    }
+
+    else if (input.includes("robot")) {
+        output = "No. I'm alien. Just like Elon Musk.";
+    }
+
+    else if (input.includes("ok")) {
         output = "A-O-K !";
     }
 
-    if (input.includes("name")) {
-        output = "You are " + name + ", and I'm chatBot. "; // need fixing
+    else if (input.includes("why")) {
+        output = "Why not?";
     }
 
-    if (input.includes("song")) {
-        output = "Yeah. One of the best mood songs. :D"; 
+    else if (input.includes("stupid")) {
+        output = "Then why are you chating with me?";
     }
 
-    if (input.includes("song")) {
-        output = "Yeah. One of the best mood songs. :D";
+    else if (input.includes("understand")) {
+        output = "Me 2.";
     }
+
+    // In case bot don't understand
+    else {
+        output = "...";
+    }
+    
 
 
 
