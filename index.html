@@ -14,7 +14,7 @@
 
     <div class="center">
         <div id="scroll">
-            <p class="center">Feel free to send a message.</p>
+            <p class="center boxnav">ChatBox</p>
             
         </div>
     </div>
@@ -22,11 +22,16 @@
 
     <div id="textbox" class="center">
         
-            <input id="text">
+            <input onkeydown="{if(event.keyCode === 13) {submit()}}" id="text">
             <button id="btn" type="submit" onclick="submit()">Send</button>
        
     
     </div>
+
+    <footer>
+        <p class="footerText">© 2018 – 2021 Boris Janković | All Rights Reserved</p>
+    </footer>
+    
     
 </body>
 </html>

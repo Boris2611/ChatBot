@@ -27,6 +27,13 @@ body {
 }
 
 
+.boxnav {
+    background-color: #999;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
 
 
 .botText, .myText, .startText {
@@ -34,27 +41,26 @@ body {
     border-radius: 10px;
     margin: 10px;
     color: white;
-
+    width:max-content; /* fit-content stoped working (This done the same) */
 }
 
 .startText {
     background-color: rgb(74, 8, 119);
     margin-top: 20px;
-    border: 1px solid #888;
+    border: 2px solid #888;
 }
 
 .botText {
     background-color: rgb(74, 8, 119);
     margin-top: 80px;
-    border: 1px solid #888;
-    width: fit-content;
+    border: 2px solid #888;
 }
 
 .myText {
     float: right;
     background-color: rgb(0, 97, 97);
     margin-top: 10px;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 
@@ -83,4 +89,19 @@ button {
     color: white;
     width: 60px;
     box-shadow: 0px 0px 10px 10px black;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.527);
+   
+}
+
+.footerText {
+    margin: 0;
+    color: #999;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    margin-top: 300px;
 }

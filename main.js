@@ -1,7 +1,8 @@
 const pop = new Audio("pop.mp3")
 
 var inputed="RandomText"
-var output = "RandomText"
+var output = "TestText"
+
 
 
 
@@ -11,6 +12,7 @@ var output = "RandomText"
 function submit() {
     inputed = text.value;
     input = inputed.toLowerCase();
+    text.value = ""; //Returning blank input
 
 /*
     if (x === 1) {
@@ -54,6 +56,10 @@ function logic() {
         output = "Hi.";
     }
 
+    if (input.includes("hello")) {
+        output = "Hi.";
+    }
+
     if (input.includes("how are")) {
         output = "I'm Fine. How are you?";
     }
@@ -79,7 +85,7 @@ function logic() {
     }
 
     if (input.includes("song")) {
-        output = "Yeah. One of the best mood songs. :D"; // need fixing
+        output = "Yeah. One of the best mood songs. :D";
     }
 
 
