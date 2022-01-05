@@ -42,6 +42,7 @@ body {
     margin: 10px;
     color: white;
     width:max-content; /* fit-content stoped working (This done the same) */
+    max-width: 200px;
 }
 
 .startText {
