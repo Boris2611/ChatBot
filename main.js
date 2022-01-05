@@ -91,6 +91,22 @@ function logic() {
         output = "Why? What happened?";
     }
 
+    if (input.includes("yes")) {
+        output = ":D";
+    }
+
+    if (input.includes("no")) {
+        output = ":(";
+    }
+
+    if (input.includes("love")) {
+        output = "What is love?";
+    }
+
+    else if (input.includes("want")) {
+        output = "We all want something...";
+    }
+
     // Random Shit
 
     else if (input.includes("name")) {
